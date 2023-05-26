@@ -1,12 +1,15 @@
-- [0. 前置知识 Backgd](#0-前置知识-backgd)
+# 目录
+
+- [目录](#目录)
+- [0. 前置知识 Background](#0-前置知识-background)
   - [0.1 操作系统使用](#01-操作系统使用)
   - [0.2 Shell使用](#02-shell使用)
   - [0.3 Web三剑客](#03-web三剑客)
   - [0.4 编程语言](#04-编程语言)
   - [0.5 数据库](#05-数据库)
   - [0.6 协议](#06-协议)
-- [1. 信息收集 Recon](#1-信息收集-recon)
-- [2. 漏洞挖掘 Vulns](#2-漏洞挖掘-vulns)
+- [1. 信息收集 Reconnaissance](#1-信息收集-reconnaissance)
+- [2. 漏洞挖掘 Vulnerabilities](#2-漏洞挖掘-vulnerabilities)
   - [2.1 SQLi](#21-sqli)
   - [2.2 File Upload](#22-file-upload)
   - [2.3 XSS](#23-xss)
@@ -15,21 +18,21 @@
   - [2.6 Payment](#26-payment)
   - [2.7 WAF \& Bypass](#27-waf--bypass)
   - [2.8 White box (Code Audit)](#28-white-box-code-audit)
-- [3. 权限提升 PrivEsca](#3-权限提升-privesca)
+- [3. 权限提升 Privilege Escalation](#3-权限提升-privilege-escalation)
   - [3.1 提权原理总结](#31-提权原理总结)
   - [3.2 手工枚举](#32-手工枚举)
   - [3.3 自动枚举](#33-自动枚举)
 - [4. 后渗透期 PostPentest](#4-后渗透期-postpentest)
 - [5. 对抗攻防 AWD](#5-对抗攻防-awd)
-- [5. 社会工程 SocialEng](#5-社会工程-socialeng)
-- [6. 软件开发 SoftEng](#6-软件开发-softeng)
+- [5. 社会工程 Social Engeering](#5-社会工程-social-engeering)
+- [6. 软件开发 Software Engeering](#6-软件开发-software-engeering)
 - [Appendix. 靶场](#appendix-靶场)
 - [Appendix. 书籍](#appendix-书籍)
 - [Appendix. 学习资料](#appendix-学习资料)
 
 ---
 
-# 0. 前置知识 Backgd
+# 0. 前置知识 Background
 
 ## 0.1 操作系统使用
 
@@ -95,10 +98,10 @@
 - FTP
 - ...
 
-# 1. 信息收集 Recon
+# 1. 信息收集 Reconnaissance
 
 
-# 2. 漏洞挖掘 Vulns
+# 2. 漏洞挖掘 Vulnerabilities
 
 ## 2.1 SQLi
 
@@ -116,7 +119,7 @@
 
 ## 2.8 White box (Code Audit)
 
-# 3. 权限提升 PrivEsca
+# 3. 权限提升 Privilege Escalation
 
 主流
 - UGO
@@ -213,10 +216,10 @@
 # 5. 对抗攻防 AWD
 
 
-# 5. 社会工程 SocialEng
+# 5. 社会工程 Social Engeering
 
 
-# 6. 软件开发 SoftEng
+# 6. 软件开发 Software Engeering
 
 
 # Appendix. 靶场
