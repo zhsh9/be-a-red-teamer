@@ -30,8 +30,6 @@
 - [Appendix. 书籍](#appendix-书籍)
 - [Appendix. 学习资料](#appendix-学习资料)
 
----
-
 # 0. 前置知识 Background
 
 ## 0.1 操作系统使用
@@ -233,24 +231,24 @@
 # Appendix. 书籍
 
 Computer Science
-- 《CSAPP》
-- 《Linux Basics for Hacker》
+- *CSAPP*
+- *Linux Basics for Hacker*
 
 Computer Languages
 - Python
-  - 《Fluent Python》
+  - *Fluent Python*
 - Go
-  - 《Black Hat Go》
+  - *Black Hat Go*
 
 Pentest
-- 《Penetration Testing with Kali Linux》
-- 《Kali Linux Penetration Testing Bible》
-- 《Google Hacking》
-- 《OWASP权威指南》
+- *Penetration Testing with Kali Linux*
+- *Kali Linux Penetration Testing Bible*
+- *Google Hacking*
+- *OWASP权威指南*
 
 Binary
-- 《Intel® 64 and IA-32 Architectures Software Developer’s Manual》
-- 《The IDA Pro Book》
-- 《The Ghidra Book》
+- *Intel® 64 and IA-32 Architectures Software Developer’s Manual*
+- *The IDA Pro Book*
+- *The Ghidra Book*
 
 # Appendix. 学习资料
