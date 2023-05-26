@@ -204,8 +204,8 @@
 - [https://github.com/sleventyeleven/linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker)
 - [https://github.com/pentestmonkey/unix-privesc-check](https://github.com/pentestmonkey/unix-privesc-check)
 
-工具使用
-[👉🏻GO]()
+工具使用  
+[👉🏻GO](./3.PrivilegeEscalation/UsageOfTools.md)
 
 # 4. 后渗透期 PostPentest
 
