@@ -230,25 +230,22 @@
 
 # Appendix. 书籍
 
-Computer Science
-- *CSAPP*
-- *Linux Basics for Hacker*
-
-Computer Languages
-- Python
-  - *Fluent Python*
-- Go
-  - *Black Hat Go*
-
-Pentest
-- *Penetration Testing with Kali Linux*
-- *Kali Linux Penetration Testing Bible*
-- *Google Hacking*
-- *OWASP权威指南*
-
-Binary
-- *Intel® 64 and IA-32 Architectures Software Developer’s Manual*
-- *The IDA Pro Book*
-- *The Ghidra Book*
+- Computer Science
+  - *CSAPP*
+  - *Linux Basics for Hacker*
+- Computer Languages
+  - Python
+    - *Fluent Python*
+  - Go
+    - *Black Hat Go*
+- Pentest
+  - *Penetration Testing with Kali Linux*
+  - *Kali Linux Penetration Testing Bible*
+  - *Google Hacking*
+  - *OWASP权威指南*
+- Binary
+  - *Intel® 64 and IA-32 Architectures Software Developer’s Manual*
+  - *The IDA Pro Book*
+  - *The Ghidra Book*
 
 # Appendix. 学习资料
