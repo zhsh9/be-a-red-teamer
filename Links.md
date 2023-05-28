@@ -1,0 +1,45 @@
+Collect useful links among the field of security.
+
+- **Online Tool**
+  - Languages
+    - [MySQL](https://onecompiler.com/mysql)
+  - Encoding
+    - [CyberChef](https://gchq.github.io/CyberChef/)
+  - CMS recognition
+    - [yunsee](https://www.yunsee.cn/)
+- **Research**
+  - Online tools
+    - [overleaf](https://www.overleaf.com)
+    - [latex math](https://latex.codecogs.com/eqneditor/editor.php)
+  - Magzines and conferences
+    -  [Google Scholar](https://scholar.google.com)
+    - [IEEE Symposium on Security and Privacy](https://ieeexplore.ieee.org/xpl/conhome/1000646/all-proceedings)
+    - [NDSS Symposium](https://www.ndss-symposium.org)
+    - [USENIX Security](https://www.usenix.org/conference/usenixsecurity21)
+    - [CCS Conference](https://dl.acm.org/conference/ccs)
+- **VM List**
+  - [NetSecFocus Trophy Room](https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/)
+  - [Vulnhub Environment](https://vulhub.org/#/environments/)
+- **Kali Linux**
+  - [Explain Shell](https://explainshell.com/)
+  - [Tools](https://www.kali.org/tools/)
+  - [Docs](https://www.kali.org/docs/)
+  - [Exploit Database](https://www.exploit-db.com/)
+  - [Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
+- **Pentest Methodology**
+  - [OWASP Top10 v2021](https://owasp.org/Top10/)
+  - [OWASP's Collection of Methodologies](https://wiki.owasp.org/index.php/Penetration_testing_methodologies)
+  - [MITRE ATT&CK](https://attack.mitre.org)
+- **Wiki**
+  - [CTF Wiki](https://ctf-wiki.org)
+  - [OI Wiki](https://oi-wiki.org)
+  - [Pentest Monkey](https://pentestmonkey.net/)
+- **Media**
+  - [Hacking8](https://i.hacking8.com)
+  - [Xuanwu](https://xlab.tencent.com/cn/)
+  - [unsafe](https://unsafe.sh)
+- **Document**
+  - [Devdocs](https://devdocs.io/)
+- **Visualization**
+  - [Get Shields](https://shields.io/)
+  - [Carbon](https://carbon.now.sh)
