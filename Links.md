@@ -1,12 +1,14 @@
 Collect useful links among the field of security.
 
 - **Online Tool**
-  - Languages
+  - Language
     - [MySQL](https://onecompiler.com/mysql)
   - Encoding
     - [CyberChef](https://gchq.github.io/CyberChef/)
   - CMS recognition
     - [yunsee](https://www.yunsee.cn/)
+  - Binary Exploit
+    - [GTFOBins](https://gtfobins.github.io/)
 - **Research**
   - Online tools
     - [overleaf](https://www.overleaf.com)
@@ -43,3 +45,4 @@ Collect useful links among the field of security.
 - **Visualization**
   - [Get Shields](https://shields.io/)
   - [Carbon](https://carbon.now.sh)
+  - [asciinema](https://github.com/asciinema/asciinema)

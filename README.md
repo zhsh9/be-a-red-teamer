@@ -10,14 +10,15 @@
   - [0.6 协议](#06-协议)
 - [1. 信息收集 Reconnaissance](#1-信息收集-reconnaissance)
 - [2. 漏洞挖掘 Vulnerabilities](#2-漏洞挖掘-vulnerabilities)
-  - [2.1 SQLi](#21-sqli)
-  - [2.2 File Upload](#22-file-upload)
-  - [2.3 XSS](#23-xss)
-  - [2.4 CSRF](#24-csrf)
-  - [2.5 Deserialization](#25-deserialization)
-  - [2.6 Payment](#26-payment)
-  - [2.7 WAF \& Bypass](#27-waf--bypass)
-  - [2.8 White box (Code Audit)](#28-white-box-code-audit)
+  - [Command Injection](#command-injection)
+  - [SQLi](#sqli)
+  - [File Upload](#file-upload)
+  - [XSS](#xss)
+  - [CSRF](#csrf)
+  - [Deserialization](#deserialization)
+  - [Payment](#payment)
+  - [WAF \& Bypass](#waf--bypass)
+  - [White box (Code Audit)](#white-box-code-audit)
 - [3. 权限提升 Privilege Escalation](#3-权限提升-privilege-escalation)
   - [3.1 提权原理总结](#31-提权原理总结)
   - [3.2 手工枚举](#32-手工枚举)
@@ -48,7 +49,7 @@
 
 ## 0.2 Shell使用
 
-- bash
+- bash, [👉🏻Go](./0.Background/OS/Linux/bash/)
 - zsh
 - fish
 
@@ -102,21 +103,23 @@
 
 # 2. 漏洞挖掘 Vulnerabilities
 
-## 2.1 SQLi
+## Command Injection
 
-## 2.2 File Upload
+## SQLi
 
-## 2.3 XSS
+## File Upload
 
-## 2.4 CSRF
+## XSS
 
-## 2.5 Deserialization
+## CSRF
 
-## 2.6 Payment
+## Deserialization
 
-## 2.7 WAF & Bypass
+## Payment
 
-## 2.8 White box (Code Audit)
+## WAF & Bypass
+
+## White box (Code Audit)
 
 # 3. 权限提升 Privilege Escalation
 
@@ -145,6 +148,9 @@
 - Mprotect
 - chroot
 - firejail
+
+靠山吃山，靠水吃水
+- [GTFOBins](https://gtfobins.github.io/)
 
 ## 3.1 提权原理总结
 
