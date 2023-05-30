@@ -1,10 +1,10 @@
-# 目录
-
 ![License](https://img.shields.io/github/license/zhsh9/be-a-red-teamer)
-![Repo Size](https://img.shields.io/github/repo-size/zhsh9/be-a-red-teamer?color=green?label=Repo%20Size)
-![Activity](https://img.shields.io/github/commit-activity/w/zhsh9/be-a-red-teamer?color=orange&label=Commit%20Activity)
+![Repo Size](https://img.shields.io/github/repo-size/zhsh9/be-a-red-teamer?color=green)
+![Activity](https://img.shields.io/github/commit-activity/w/zhsh9/be-a-red-teamer?color=orange)
 ![zhsh9](https://img.shields.io/github/followers/zhsh9?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/zhsh9/be-a-red-teamer?style=social)
+
+# 目录
 
 - [目录](#目录)
 - [0. 前置知识 Background](#0-前置知识-background)
