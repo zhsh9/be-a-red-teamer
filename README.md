@@ -20,6 +20,7 @@
   - [WAF \& Bypass](#waf--bypass)
   - [White box (Code Audit)](#white-box-code-audit)
 - [3. 权限提升 Privilege Escalation](#3-权限提升-privilege-escalation)
+  - [3.0 Shells](#30-shells)
   - [3.1 提权原理总结](#31-提权原理总结)
   - [3.2 手工枚举](#32-手工枚举)
   - [3.3 自动枚举](#33-自动枚举)
@@ -27,7 +28,7 @@
 - [5. 对抗攻防 AWD](#5-对抗攻防-awd)
 - [5. 社会工程 Social Engeering](#5-社会工程-social-engeering)
 - [6. 软件开发 Software Engeering](#6-软件开发-software-engeering)
-- [Appendix. Links](#appendix-links)
+- [Appendix. 链接](#appendix-链接)
 - [Appendix. 靶场](#appendix-靶场)
 - [Appendix. 书籍](#appendix-书籍)
 - [Appendix. 学习资料](#appendix-学习资料)
@@ -152,6 +153,12 @@
 靠山吃山，靠水吃水
 - [GTFOBins](https://gtfobins.github.io/)
 
+## 3.0 Shells
+
+A better shell, [👉🏻Go](./3.Privilege-Escalation/Linux/A-Better-Shell.md)
+
+A reverse shell, [👉🏻Go]()
+
 ## 3.1 提权原理总结
 
 1. 低权限可以修改可执行文件or脚本，再以高权限身份运行；
@@ -212,8 +219,7 @@
 - [https://github.com/sleventyeleven/linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker)
 - [https://github.com/pentestmonkey/unix-privesc-check](https://github.com/pentestmonkey/unix-privesc-check)
 
-工具使用  
-[👉🏻GO](./3.PrivilegeEscalation/UsageOfTools.md)
+工具使用, [👉🏻GO](./3.PrivilegeEscalation/UsageOfTools.md)
 
 # 4. 后渗透期 PostPentest
 
@@ -227,7 +233,7 @@
 # 6. 软件开发 Software Engeering
 
 
-# Appendix. Links
+# Appendix. 链接
 
 [👉🏻GO](./Links.md)
 
