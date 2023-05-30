@@ -8,6 +8,7 @@
   - [0.4 编程语言](#04-编程语言)
   - [0.5 数据库](#05-数据库)
   - [0.6 协议](#06-协议)
+  - [0.7 二进制](#07-二进制)
 - [1. 信息收集 Reconnaissance](#1-信息收集-reconnaissance)
 - [2. 漏洞挖掘 Vulnerabilities](#2-漏洞挖掘-vulnerabilities)
   - [Command Injection](#command-injection)
@@ -24,7 +25,7 @@
   - [3.1 提权原理总结](#31-提权原理总结)
   - [3.2 手工枚举](#32-手工枚举)
   - [3.3 自动枚举](#33-自动枚举)
-- [4. 后渗透期 PostPentest](#4-后渗透期-postpentest)
+- [4. 后渗透期 Post Pentest](#4-后渗透期-post-pentest)
 - [5. 对抗攻防 AWD](#5-对抗攻防-awd)
 - [5. 社会工程 Social Engeering](#5-社会工程-social-engeering)
 - [6. 软件开发 Software Engeering](#6-软件开发-software-engeering)
@@ -78,7 +79,7 @@
 ## 0.5 数据库
 
 - SQL
-  - MySQL
+  - MySQL, <u>[*👉🏻Go*](./0.Background/Database/MySQL/README.md)</u>
   - MSSQL
   - Oracle SQL
 - NoSQL
@@ -99,6 +100,14 @@
 - VPN
 - FTP
 - ...
+
+## 0.7 二进制
+
+- Assembly
+- Reverse Engineering, x86_64
+  - Basic: C/C++
+  - Windows Platform
+  - Linux PLatform
 
 # 1. 信息收集 Reconnaissance
 
@@ -221,7 +230,7 @@
 
 工具使用, <u>[*👉🏻GO*](./3.PrivilegeEscalation/UsageOfTools.md)</u>
 
-# 4. 后渗透期 PostPentest
+# 4. 后渗透期 Post Pentest
 
 
 # 5. 对抗攻防 AWD
