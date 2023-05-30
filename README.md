@@ -267,4 +267,6 @@
 
 # Appendix. 学习资料
 
-- [![YouTube](https://img.shields.io/badge/YouTube-Adversary%20Emulation%20with%20Caldera%20%7C%20Red%20Team%20Series%201--13-red)](https://www.youtube.com/watch?v=Vdd4lRXB7zE&list=PLTnRtjQN5iea6dLA_4i3qFFX0kwvdL0bL)
+![YouTube](https://img.shields.io/badge/YouTube-Video-red?style=for-the-badge&logo=YouTube)
+
+- [Adversary Emulation with Caldera | Red Team Series 1-13](https://www.youtube.com/watch?v=Vdd4lRXB7zE&list=PLTnRtjQN5iea6dLA_4i3qFFX0kwvdL0bL)
