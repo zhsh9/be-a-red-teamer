@@ -103,7 +103,7 @@
 
 ## 0.7 二进制
 
-- Assembly
+- Assembly, <u>[*👉🏻Go*](./0.Background/Binary/Assembly/README.md)</u>
 - Reverse Engineering, x86_64
   - Basic: C/C++
   - Windows Platform
