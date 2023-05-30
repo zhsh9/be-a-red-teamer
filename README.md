@@ -237,6 +237,8 @@
 
 [👉🏻GO](./Links.md)
 
+[![Go](https://img.shields.io/badge/%F0%9F%91%89%F0%9F%8F%BB-GO-red)](./Links.md)
+
 # Appendix. 靶场
 
 - [OSCP](https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=0)
@@ -270,3 +272,4 @@
 ![YouTube](https://img.shields.io/badge/YouTube-Video-red?style=for-the-badge&logo=YouTube)
 
 - [Adversary Emulation with Caldera | Red Team Series 1-13](https://www.youtube.com/watch?v=Vdd4lRXB7zE&list=PLTnRtjQN5iea6dLA_4i3qFFX0kwvdL0bL)
+- NTUSTISC - Penetration Test: [0x01](https://www.youtube.com/watch?v=D8Usq_BCW2Y), [0x02](https://www.youtube.com/watch?v=9p57TntyqFU)
