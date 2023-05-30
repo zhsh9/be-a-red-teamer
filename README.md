@@ -18,7 +18,7 @@
   - [Deserialization](#deserialization)
   - [Payment](#payment)
   - [WAF \& Bypass](#waf--bypass)
-  - [White box (Code Audit)](#white-box-code-audit)
+  - [Code Audit](#code-audit)
 - [3. 权限提升 Privilege Escalation](#3-权限提升-privilege-escalation)
   - [3.0 Shells](#30-shells)
   - [3.1 提权原理总结](#31-提权原理总结)
@@ -120,7 +120,7 @@
 
 ## WAF & Bypass
 
-## White box (Code Audit)
+## Code Audit
 
 # 3. 权限提升 Privilege Escalation
 
@@ -155,9 +155,8 @@
 
 ## 3.0 Shells
 
-A better shell, [👉🏻Go](./3.Privilege-Escalation/Linux/A-Better-Shell.md)
-
-A reverse shell, [👉🏻Go]()
+- better shell, [👉🏻Go](./3.Privilege-Escalation/Linux/Better-Shell.md)
+- reverse shell, [👉🏻Go](./3.Privilege-Escalation/Linux/Reverse-Shell.md)
 
 ## 3.1 提权原理总结
 
