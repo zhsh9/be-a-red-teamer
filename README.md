@@ -50,7 +50,7 @@
 
 ## 0.2 Shell使用
 
-- bash, [<u>*👉🏻GO*</u>](./0.Background/OS/Linux/bash/)
+- bash, <u>[*👉🏻GO*](./0.Background/OS/Linux/bash/)</u>
 - zsh
 - fish
 
@@ -64,7 +64,7 @@
 
 主流:
 - Python
-- PHP, [👉🏻Go](./0.Background/Language/PHP/README.md)
+- PHP, <u>[*👉🏻Go*](./0.Background/Language/PHP/README.md)</u>
 - Golang
 - Java
 - C
@@ -156,8 +156,8 @@
 
 ## 3.0 Shells
 
-- better shell, [<u>*👉🏻GO*</u>](./3.Privilege-Escalation/Linux/Better-Shell.md)
-- reverse shell, [<u>*👉🏻GO*</u>](./3.Privilege-Escalation/Linux/Reverse-Shell.md)
+- better shell, <u>[*👉🏻GO*](./3.Privilege-Escalation/Linux/Better-Shell.md)</u>
+- reverse shell, <u>[*👉🏻GO*](./3.Privilege-Escalation/Linux/Reverse-Shell.md)</u>
 
 ## 3.1 提权原理总结
 
@@ -219,7 +219,7 @@
 - [https://github.com/sleventyeleven/linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker)
 - [https://github.com/pentestmonkey/unix-privesc-check](https://github.com/pentestmonkey/unix-privesc-check)
 
-工具使用, [<u>*👉🏻GO*</u>](./3.PrivilegeEscalation/UsageOfTools.md)
+工具使用, <u>[*👉🏻GO*](./3.PrivilegeEscalation/UsageOfTools.md)</u>
 
 # 4. 后渗透期 PostPentest
 
@@ -235,7 +235,7 @@
 
 # Appendix. 链接
 
-[<u>*👉🏻GO*</u>](./Links.md)
+<u>[*👉🏻GO*](./Links.md)</u>
 
 # Appendix. 靶场
 
