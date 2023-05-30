@@ -50,7 +50,7 @@
 
 ## 0.2 Shell使用
 
-- bash, [👉🏻Go](./0.Background/OS/Linux/bash/)
+- bash, [<u>*👉🏻GO*</u>](./0.Background/OS/Linux/bash/)
 - zsh
 - fish
 
@@ -156,8 +156,8 @@
 
 ## 3.0 Shells
 
-- better shell, [👉🏻Go](./3.Privilege-Escalation/Linux/Better-Shell.md)
-- reverse shell, [👉🏻Go](./3.Privilege-Escalation/Linux/Reverse-Shell.md)
+- better shell, [<u>*👉🏻GO*</u>](./3.Privilege-Escalation/Linux/Better-Shell.md)
+- reverse shell, [<u>*👉🏻GO*</u>](./3.Privilege-Escalation/Linux/Reverse-Shell.md)
 
 ## 3.1 提权原理总结
 
@@ -219,7 +219,7 @@
 - [https://github.com/sleventyeleven/linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker)
 - [https://github.com/pentestmonkey/unix-privesc-check](https://github.com/pentestmonkey/unix-privesc-check)
 
-工具使用, [👉🏻GO](./3.PrivilegeEscalation/UsageOfTools.md)
+工具使用, [<u>*👉🏻GO*</u>](./3.PrivilegeEscalation/UsageOfTools.md)
 
 # 4. 后渗透期 PostPentest
 
@@ -235,9 +235,7 @@
 
 # Appendix. 链接
 
-[👉🏻GO](./Links.md)
-
-[![Go](https://img.shields.io/badge/%F0%9F%91%89%F0%9F%8F%BB-GO-red)](./Links.md)
+[<u>*👉🏻GO*</u>](./Links.md)
 
 # Appendix. 靶场
 
