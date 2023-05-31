@@ -43,18 +43,6 @@
 Red Team Kill Chain:
 
 ```
-┌─────────┐   ┌────────────┐   ┌───────────┐   ┌────────────┐    ┌───────────┐   ┌──────────┐
-│ Initial │   │ Initial    │   │ Establish │   │ Escalate   │    │ Internal  │   │ Complete │
-│ Recon   ├───► Compromise ├───► Foothold  ├───► Privileges ├────► Recon     ├───► Mission  │
-└─────────┘   └────────────┘   └───────────┘   └─────▲──────┘    └─────┬─────┘   └──────────┘
-                                                     │                 │
-                                               ┌─────┴──────┐    ┌─────▼─────┐
-                                               │ Maintain   │    │ Move      │
-                                               │ Presence   ◄────┤ Laterally │
-                                               └────────────┘    └───────────┘
-```
-
-```
 +---------+     +------------+     +-----------+     +------------+     +-----------+     +----------+
 | Initial |     |  Initial   |     | Establish |     |  Escalate  |     | Internal  |     | Complete |
 |  Recon  | --> | Compromise | --> | Foothold  | --> | Privileges | --> |   Recon   | --> | Mission  |

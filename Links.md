@@ -46,3 +46,5 @@ Collect useful links among the field of security.
   - [Get Shields](https://shields.io/)
   - [Carbon](https://carbon.now.sh)
   - [asciinema](https://github.com/asciinema/asciinema)
+  - [asciiflow](https://asciiflow.com/)
+  - [Graph-Easy](https://github.com/ironcamel/Graph-Easy)
