@@ -40,6 +40,20 @@
 - [Appendix. 书籍](#appendix-书籍)
 - [Appendix. 学习资料](#appendix-学习资料)
 
+Red Team Kill Chain:
+
+```
+┌─────────┐   ┌────────────┐   ┌───────────┐   ┌────────────┐    ┌───────────┐   ┌──────────┐
+│ Initial │   │ Initial    │   │ Establish │   │ Escalate   │    │ Internal  │   │ Complete │
+│ Recon   ├───► Compromise ├───► Foothold  ├───► Privileges ├────► Recon     ├───► Mission  │
+└─────────┘   └────────────┘   └───────────┘   └─────▲──────┘    └─────┬─────┘   └──────────┘
+                                                     │                 │
+                                               ┌─────┴──────┐    ┌─────▼─────┐
+                                               │ Maintain   │    │ Move      │
+                                               │ Presence   ◄────┤ Laterally │
+                                               └────────────┘    └───────────┘
+```
+
 # 0. 前置知识 Background
 
 ## 0.1 操作系统使用
