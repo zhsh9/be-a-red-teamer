@@ -45,6 +45,24 @@ Wrapper actions:
     exegol install myimage full --build-log "/tmp/build.log"
     ```
 - start
+    ```bash
+    # Start interactively a container
+    exegol start
+    # Create a demo container using full image
+    exegol start demo full
+    # Spawn a shell from demo container
+    exegol start demo
+    # Create a container test with a custom shared workspace
+    exegol start test full -w "./project/pentest/"
+    # Create a container test sharing the current working directory
+    exegol start test full -cwd
+    # Create a container htb with a VPN
+    exegol start htb full --vpn "~/vpn/lab_Dramelac.ovpn"
+    # Create a container app with custom volume
+    exegol start app full -V "/var/app/:/app/"
+    # Get a shell based on tmux
+    exegol start --shell tmux
+    ```
 - info
 - exec
 - update
@@ -53,3 +71,6 @@ Wrapper actions:
 - remove
 - uninstall
 - version
+    ```bash
+    exegol version -vvv
+    ```

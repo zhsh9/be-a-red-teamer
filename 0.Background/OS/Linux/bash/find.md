@@ -30,6 +30,9 @@ find . -name "*.log" -exec cat {} \; > /zhsh9.log
 find . -name "*.log" -exec printf "File: %s\n" {} \;
 
 find . -type f -size +500M -print0 | xargs -0 ls -l
+find . -type f -size +500M -print0 | xargs -0 du -h | sort -nr
+
+find . -type f -print0 | xargs -0 du -h | sort -rh | head -n 5
 ```
 
 Manual:

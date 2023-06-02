@@ -64,7 +64,7 @@ Red Team Kill Chain:
 OS:
 - Linux
     - Black Arch Linux
-    - Kali Linux
+    - Kali Linux, <u>[*👉🏻GO*](./0.Background/OS/Kali-Linux/README.md)</u>
     - Parrot OS
 - Windows
     - Win Servers
@@ -75,7 +75,8 @@ OS:
 
 Integrated Pentest Environment:
 - Exegol on macOS, <u>[*👉🏻GO*](./0.Background/OS/macOS/Exegol.md)</u>
-- Kali Linux VM on macOS
+- Kali Linux VM, PD on macOS
+- Kali Linux VM, OrbStack on macOS
 
 ## 0.2 Shell使用
 
