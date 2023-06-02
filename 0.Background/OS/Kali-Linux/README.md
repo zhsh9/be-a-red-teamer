@@ -38,3 +38,58 @@ unzip Monoid.zip
 cp Monoid-*.ttf ~/.fonts
 sudo fc-cache
 ```
+
+# i3 config
+
+- [Official i3-dotfiles](https://gitlab.com/Arszilla/i3-dotfiles)
+- [Customized i3-dotfiles]()
+
+## prl-tools
+
+REFs:
+- [prl-tools description](https://git.sr.ht/~dcao/dotfiles/commit/master#cfg/parallels/prl-tools.patch)
+- [Parallels Tools Overview](https://download.parallels.com/desktop/v12/docs/en_US/Parallels%20Desktop%20User's%20Guide/32789.htm)
+
+- prlcc
+- prlcp
+- prldnd
+- prlfsmountd
+- prlhosttime
+- prlimit
+- prlsga
+- prl_showvmcfg
+- prlshprint
+- prlshprof
+- prltimesync
+- prltoolsd
+- prlusmd
+
+Important Changing:
+```bash
+# Enable parallels desktop tools.
+# When on xfce-desktop, run `ps aux | grep prl`:
+##/usr/bin/prlcc
+##/usr/bin/prlcp
+##/usr/bin/prldnd
+##/usr/bin/prlsga
+##/usr/bin/prlsshprof
+##/usr/bin/prltimesync
+##/usr/bin/prlusmd
+##/usr/bin/prltoolsd -p /var/run/prltoolsd.pid
+# So, we know xfce executes some tools inside /usr/bin, like /usr/bin/prl*
+# Do the same thing on i3.
+# /home/kali/.config/i3/config.d/execs.conf
+
+## Start vmware-user-suid-wrapper to enable copy/paste between host and guest: (on VMware)
+exec --no-startup-id /usr/bin/vmware-user-suid-wrapper
+## Start vmware-user-suid-wrapper to enable copy/paste between host and guest: (on Parallels)
+exec --no-startup-id /usr/bin/prlcp
+## other tools,
+exec --no-startup-id /usr/bin/prlcc
+exec --no-startup-id /usr/bin/prldnd
+exec --no-startup-id /usr/bin/prlsga
+exec --no-startup-id /usr/bin/prlsshprof
+exec --no-startup-id /usr/bin/prltimesync
+exec --no-startup-id /usr/bin/prlusmd
+exec --no-startup-id /usr/bin/prltoolsd -p /var/run/prltoolsd.pid
+```
