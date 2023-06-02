@@ -47,7 +47,7 @@ sudo fc-cache
 ## prl-tools
 
 REFs:
-- [prl-tools description](https://git.sr.ht/~dcao/dotfiles/commit/master#cfg/parallels/prl-tools.patch)
+- [prl-tools description](https://git.sr.ht/~dcao/dotfiles/commit/master)
 - [Parallels Tools Overview](https://download.parallels.com/desktop/v12/docs/en_US/Parallels%20Desktop%20User's%20Guide/32789.htm)
 
 - prlcc
@@ -83,13 +83,15 @@ Important Changing:
 ## Start vmware-user-suid-wrapper to enable copy/paste between host and guest: (on VMware)
 exec --no-startup-id /usr/bin/vmware-user-suid-wrapper
 ## Start vmware-user-suid-wrapper to enable copy/paste between host and guest: (on Parallels)
-exec --no-startup-id /usr/bin/prlcp
-## other tools,
+###Some toosl are disabled, because not knowing what these tools are used for.
+exec --no-startup-id /usr/bin/vmware-user-suid-wrapper
+###Parallels Desktop
+exec --no-startup-id /usr/bin/prltoolsd -f -p /var/run/prltoolsd.pid
 exec --no-startup-id /usr/bin/prlcc
-exec --no-startup-id /usr/bin/prldnd
-exec --no-startup-id /usr/bin/prlsga
-exec --no-startup-id /usr/bin/prlsshprof
+#exec --no-startup-id /usr/bin/prldnd
+exec --no-startup-id /usr/bin/prlcp
+#exec --no-startup-id /usr/bin/prlsga
+#exec --no-startup-id /usr/bin/prlsshprof
 exec --no-startup-id /usr/bin/prltimesync
-exec --no-startup-id /usr/bin/prlusmd
-exec --no-startup-id /usr/bin/prltoolsd -p /var/run/prltoolsd.pid
+#exec --no-startup-id /usr/bin/prlusmd
 ```
