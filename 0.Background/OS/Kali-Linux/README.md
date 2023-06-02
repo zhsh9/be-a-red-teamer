@@ -80,18 +80,18 @@ Important Changing:
 # Do the same thing on i3.
 # /home/kali/.config/i3/config.d/execs.conf
 
-## Start vmware-user-suid-wrapper to enable copy/paste between host and guest: (on VMware)
+## (1) Start vmware-user-suid-wrapper to enable copy/paste between host and guest: (on VMware)
 exec --no-startup-id /usr/bin/vmware-user-suid-wrapper
-## Start vmware-user-suid-wrapper to enable copy/paste between host and guest: (on Parallels)
+
+## (2) Start vmware-user-suid-wrapper to enable copy/paste between host and guest: (on Parallels)
 ###Some toosl are disabled, because not knowing what these tools are used for.
-exec --no-startup-id /usr/bin/vmware-user-suid-wrapper
 ###Parallels Desktop
 exec --no-startup-id /usr/bin/prltoolsd -f -p /var/run/prltoolsd.pid
-exec --no-startup-id /usr/bin/prlcc
+#exec --no-startup-id /usr/bin/prlcc
 #exec --no-startup-id /usr/bin/prldnd
 exec --no-startup-id /usr/bin/prlcp
 #exec --no-startup-id /usr/bin/prlsga
 #exec --no-startup-id /usr/bin/prlsshprof
-exec --no-startup-id /usr/bin/prltimesync
+#exec --no-startup-id /usr/bin/prltimesync
 #exec --no-startup-id /usr/bin/prlusmd
 ```
