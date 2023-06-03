@@ -35,6 +35,14 @@ eval "$(register-python-argcomplete --no-defaults exegol)" >> ~/.bashrc
 
 # Usage
 
+Common usage:
+
+```bash
+exegol install full
+exegol start
+exegol stop
+```
+
 Wrapper actions:
 - install
     ```bash
@@ -74,3 +82,43 @@ Wrapper actions:
     ```bash
     exegol version -vvv
     ```
+
+# GUI Config
+
+AUTOMATION script:
+
+- [auto-exegol](https://github.com/zhsh9/auto-exegol)
+
+Requirements:
+
+- on macOS
+  - socat
+  - xquartz
+- on docker container
+  - libxkbcommon-x11-0
+  - ttf-wqy-microhei
+  - ttf-wqy-zenhei
+  - xfonts-wqy
+
+Installation guide:
+
+```bash
+# on macOS
+brew install socat
+brew install xquartz --cask
+
+# on container
+##for QT:
+sudo apt install -y libxkbcommon-x11-0
+##for solving messy code:
+apt install -y locales
+apt install -y locale-gen zh_CN zh_CN.utf8
+apt install -y ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
+```
+
+Initiate services on macOS:
+
+```bash
+socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:"$DISPLAY"
+open -a xquartz
+```
