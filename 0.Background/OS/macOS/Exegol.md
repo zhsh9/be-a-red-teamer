@@ -100,6 +100,8 @@ Requirements:
   - ttf-wqy-zenhei
   - xfonts-wqy
 
+locales, locale-gen, zh_CN, zh_CN.utf8, ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
+
 Installation guide:
 
 ```bash
@@ -111,9 +113,8 @@ brew install xquartz --cask
 ##for QT:
 sudo apt install -y libxkbcommon-x11-0
 ##for solving messy code:
-apt install -y locales
-apt install -y locale-gen zh_CN zh_CN.utf8
-apt install -y ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
+## apt install -y locales, locale-gen
+## solution: let linux to be capable with zh_CN.
 ```
 
 Initiate services on macOS:
