@@ -122,3 +122,17 @@ Initiate services on macOS:
 socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:"$DISPLAY"
 open -a xquartz
 ```
+
+another tiny point: when using socat, the difference between `$DISPLAY` and `"$DISPLAY"`. There are three ways to write the upward command:
+
+```bash
+socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:$DISPLAY
+socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:"$DISPLAY"
+socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
+```
+
+The difference between these three commands lies in how they handle the `$DISPLAY` variable.
+
+- In the first command, the `$DISPLAY` variable is expanded outside of the double quotes. This means that if the `$DISPLAY` variable contains spaces or other special characters, these characters will be interpreted as shell syntax and may cause syntax errors.
+- In the second command, the `$DISPLAY` variable is expanded inside the double quotes. This means that if the `$DISPLAY` variable contains spaces or other special characters, these characters will be treated as regular characters and the entire variable will be passed as one argument to the `UNIX-CLIENT` command.
+- The third command is exactly the same to the second command, but uses backslashes to escape the double quotes so that the shell can correctly interpret them.
