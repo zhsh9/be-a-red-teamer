@@ -83,7 +83,7 @@ Wrapper actions:
     exegol version -vvv
     ```
 
-# GUI Config
+# GUI
 
 AUTOMATION script:
 
