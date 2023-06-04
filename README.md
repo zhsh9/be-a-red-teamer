@@ -131,7 +131,7 @@ Integrated Pentest Environment:
 ## 0.4 编程语言
 
 主流:
-- Python
+- Python, <u>[*👉🏻Go*](./0.Background/Language/Python/README.md)</u>
 - PHP, <u>[*👉🏻Go*](./0.Background/Language/PHP/README.md)</u>
 - Golang
 - Java
