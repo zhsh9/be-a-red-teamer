@@ -118,7 +118,7 @@ Integrated Pentest Environment:
 
 ## 0.2 Shell使用
 
-- bash, <u>[*👉🏻GO*](./0.Background/OS/Linux/bash/)</u>
+- bash, <u>[*👉🏻GO*](./0.Background/OS/Linux/bash/README.md)</u>
 - zsh
 - fish
 
@@ -179,10 +179,11 @@ Integrated Pentest Environment:
 ## 0.8 效率工具
 
 - tmux, <u>[*👉🏻Go*](./0.Background/Tool/tmux.md)</u>
-- vim
+- vim, <u>[*👉🏻Go*](./0.Background/Tool/vim.md)</u>
 - ranger
 - entr, watchdog
 - zsh, fish
+- curl
 
 ## 0.9 渗透工具
 
@@ -201,20 +202,25 @@ Integrated Pentest Environment:
 wordlist:
 
 - [SecLists](https://github.com/danielmiessler/SecLists)
-- fzf-wordlists
-  - find /usr/share/seclists /usr/share/wordlists /usr/share/wfuzz /usr/share/dirb -type f | fzf
 - common used:
-  - on Kali: /usr/share/wordlists/dirb/common.txt
-  - /usr/share/dirb/wordlists/common.txt
-  - /usr/share/seclists/Discovery/Web-Content/common.txt
+  - /path/to/wordlists/dirb/common.txt
+  - /path/to/seclists/Discovery/Web-Content/common.txt
+- fzf-wordlists
+```bash
+find /usr/share/seclists /usr/share/wordlists /usr/share/wfuzz /usr/share/dirb -type f | fzf
+```
 
 operation:
 
 - [dirb](https://www.kali.org/tools/dirb/)
-  - dirb "http://$TARGET" /usr/share/seclists/Discovery/Web-Content/common.txt
+```bash
+dirb "http://$TARGET" /usr/share/seclists/Discovery/Web-Content/common.txt
+```
 - [ffuf](https://github.com/ffuf/ffuf)
-  - ffuf -fs 185 -c -w \$(fzf-wordlists) -H 'Host: FUZZ.org' -u "http://$TARGET/"
-  - ffuf -w /usr/share/dirb/wordlists/common.txt -fc 403,404 -fs 185 -u "http://$TARGET/FUZZ" -p 1
+```bash
+ffuf -fs 185 -c -w \$(fzf-wordlists) -H 'Host: FUZZ.org' -u "http://$TARGET/"
+ffuf -w /usr/share/dirb/wordlists/common.txt -fc 403,404 -fs 185 -u "http://$TARGET/FUZZ" -p 1
+```
 
 # 2. 漏洞挖掘 Vulnerabilities
 
@@ -383,6 +389,7 @@ operation:
 - YouTube
   - [ ] [Adversary Emulation with Caldera \| Red Team Series 1-13](https://www.youtube.com/watch?v=Vdd4lRXB7zE&list=PLTnRtjQN5iea6dLA_4i3qFFX0kwvdL0bL)
   - [x] NTUSTISC - Penetration Test: [0x01](https://www.youtube.com/watch?v=D8Usq_BCW2Y), [0x02](https://www.youtube.com/watch?v=9p57TntyqFU)
+  - [ ] [Beginner to Advanced Bug Bounty Hunting Course](https://www.youtube.com/watch?v=Rp69edBmFFo)
 - Articles
   - [ ] [小迪安全](https://www.yuque.com/weiker/xiaodi)
 
