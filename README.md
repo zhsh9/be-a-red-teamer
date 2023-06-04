@@ -18,6 +18,8 @@
   - [0.8 效率工具](#08-效率工具)
   - [0.9 渗透工具](#09-渗透工具)
 - [1. 信息收集 Reconnaissance](#1-信息收集-reconnaissance)
+  - [1.1 Scan](#11-scan)
+  - [1.2 Directory](#12-directory)
 - [2. 漏洞挖掘 Vulnerabilities](#2-漏洞挖掘-vulnerabilities)
   - [Command Injection](#command-injection)
   - [SQLi](#sqli)
@@ -177,17 +179,42 @@ Integrated Pentest Environment:
 ## 0.8 效率工具
 
 - tmux, <u>[*👉🏻Go*](./0.Background/Tool/tmux.md)</u>
+- vim
+- ranger
+- entr, watchdog
+- zsh, fish
 
 ## 0.9 渗透工具
 
 - Burp Suite Pro, <u>[*👉🏻Go*](./0.Background/Tool/BurpSuitePro.md)</u>
-- Scanner
-  - [nmap](https://github.com/nmap/nmap)
-  - [AutoRecon](https://github.com/Tib3rius/AutoRecon)
-  - [RustScan](https://github.com/RustScan/RustScan)
 
 # 1. 信息收集 Reconnaissance
 
+## 1.1 Scan
+
+- [nmap](https://github.com/nmap/nmap)
+- [AutoRecon](https://github.com/Tib3rius/AutoRecon)
+- [RustScan](https://github.com/RustScan/RustScan)
+
+## 1.2 Directory
+
+wordlist:
+
+- [SecLists](https://github.com/danielmiessler/SecLists)
+- fzf-wordlists
+  - find /usr/share/seclists /usr/share/wordlists /usr/share/wfuzz /usr/share/dirb -type f | fzf
+- common used:
+  - on Kali: /usr/share/wordlists/dirb/common.txt
+  - /usr/share/dirb/wordlists/common.txt
+  - /usr/share/seclists/Discovery/Web-Content/common.txt
+
+operation:
+
+- [dirb](https://www.kali.org/tools/dirb/)
+  - dirb "http://$TARGET" /usr/share/seclists/Discovery/Web-Content/common.txt
+- [ffuf](https://github.com/ffuf/ffuf)
+  - ffuf -fs 185 -c -w \$(fzf-wordlists) -H 'Host: FUZZ.org' -u "http://$TARGET/"
+  - ffuf -w /usr/share/dirb/wordlists/common.txt -fc 403,404 -fs 185 -u "http://$TARGET/FUZZ" -p 1
 
 # 2. 漏洞挖掘 Vulnerabilities
 
@@ -353,7 +380,9 @@ Integrated Pentest Environment:
 
 # Appendix. 学习资料
 
-![YouTube](https://img.shields.io/badge/YouTube-Video-red?style=for-the-badge&logo=YouTube)
+- YouTube
+  - [ ] [Adversary Emulation with Caldera \| Red Team Series 1-13](https://www.youtube.com/watch?v=Vdd4lRXB7zE&list=PLTnRtjQN5iea6dLA_4i3qFFX0kwvdL0bL)
+  - [x] NTUSTISC - Penetration Test: [0x01](https://www.youtube.com/watch?v=D8Usq_BCW2Y), [0x02](https://www.youtube.com/watch?v=9p57TntyqFU)
+- Articles
+  - [ ] [小迪安全](https://www.yuque.com/weiker/xiaodi)
 
-- [ ] [Adversary Emulation with Caldera \| Red Team Series 1-13](https://www.youtube.com/watch?v=Vdd4lRXB7zE&list=PLTnRtjQN5iea6dLA_4i3qFFX0kwvdL0bL)
-- [x] NTUSTISC - Penetration Test: [0x01](https://www.youtube.com/watch?v=D8Usq_BCW2Y), [0x02](https://www.youtube.com/watch?v=9p57TntyqFU)
