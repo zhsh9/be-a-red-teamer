@@ -96,9 +96,7 @@ Requirements:
   - xquartz
 - on docker container
   - libxkbcommon-x11-0
-  - ttf-wqy-microhei
-  - ttf-wqy-zenhei
-  - xfonts-wqy
+  - locales, ttf-xx-fonts
 
 locales, locale-gen, zh_CN, zh_CN.utf8, ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
 
