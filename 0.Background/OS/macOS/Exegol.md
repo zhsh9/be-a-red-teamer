@@ -135,3 +135,17 @@ The difference between these three commands lies in how they handle the `$DISPLA
 - In the first command, the `$DISPLAY` variable is expanded outside of the double quotes. This means that if the `$DISPLAY` variable contains spaces or other special characters, these characters will be interpreted as shell syntax and may cause syntax errors.
 - In the second command, the `$DISPLAY` variable is expanded inside the double quotes. This means that if the `$DISPLAY` variable contains spaces or other special characters, these characters will be treated as regular characters and the entire variable will be passed as one argument to the `UNIX-CLIENT` command.
 - The third command is exactly the same to the second command, but uses backslashes to escape the double quotes so that the shell can correctly interpret them.
+
+# BurpSuitePro and Host browser
+
+1. Host
+   1. docker run with port sharing.
+      - exegol start $CONTAINER_NAME full -p 127.0.0.1:8080:8080
+   2. broser proxy config (SwitchyOmega)
+   ![proxy config](./.img-Exegol/1.png)
+   3. install burp cacert.der
+   ![install cert](./.img-Exegol/3.png)
+2. Container
+   1. download burp cacert.der (url: burp/)
+   2. change proxy setting
+   ![proxy config](./.img-Exegol/2.png)

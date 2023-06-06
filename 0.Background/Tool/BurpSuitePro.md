@@ -24,4 +24,8 @@ Create and change ~/BurpSuitePro/user.vmoptions
 -noverify
 ```
 
+Config HTTPS (import cert, which downloaded from `burp/`, on Chrome)
+
+![import cert](./.img-BurpSuitePro/1.png)
+
 # macOS

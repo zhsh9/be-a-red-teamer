@@ -121,6 +121,7 @@ Integrated Pentest Environment:
 - bash, <u>[*👉🏻GO*](./0.Background/OS/Linux/bash/README.md)</u>
 - zsh
 - fish
+- powershell
 
 ## 0.3 Web三剑客
 
@@ -390,6 +391,8 @@ ffuf -w /usr/share/dirb/wordlists/common.txt -fc 403,404 -fs 185 -u "http://$TAR
   - [ ] [Adversary Emulation with Caldera \| Red Team Series 1-13](https://www.youtube.com/watch?v=Vdd4lRXB7zE&list=PLTnRtjQN5iea6dLA_4i3qFFX0kwvdL0bL)
   - [x] NTUSTISC - Penetration Test: [0x01](https://www.youtube.com/watch?v=D8Usq_BCW2Y), [0x02](https://www.youtube.com/watch?v=9p57TntyqFU)
   - [ ] [Beginner to Advanced Bug Bounty Hunting Course](https://www.youtube.com/watch?v=Rp69edBmFFo)
-- Articles
+- Article
   - [ ] [小迪安全](https://www.yuque.com/weiker/xiaodi)
-
+- Worlshop
+  - [ ] [pwn.college](https://pwn.college/)
+  - [ ] [MADWeb, Workshop on Measurements, Attacks, and Defenses for the Web](https://madweb.work/)
