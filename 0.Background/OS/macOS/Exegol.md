@@ -149,3 +149,6 @@ The difference between these three commands lies in how they handle the `$DISPLA
    1. download burp cacert.der (url: burp/)
    2. change proxy setting
    ![proxy config](./.img-Exegol/2.png)
+
+
+# Fix messy code
