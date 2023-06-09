@@ -9,6 +9,7 @@ Collect useful links among the field of security.
     - [yunsee](https://www.yunsee.cn/)
   - Binary Exploit
     - [GTFOBins](https://gtfobins.github.io/)
+    - [reverse-shell-generator](https://www.revshells.com/)
   - MD5
     - [SOMD5](https://www.somd5.com/)
 - **Research**
