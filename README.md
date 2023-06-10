@@ -28,6 +28,7 @@
   - [CDN](#cdn)
   - [WAF](#waf)
   - [Web源码](#web源码)
+  - [子域名](#子域名)
   - [站点搭建](#站点搭建)
   - [资产收集](#资产收集)
 - [2. 漏洞挖掘 Vulnerabilities](#2-漏洞挖掘-vulnerabilities)
@@ -334,9 +335,39 @@ ffuf -w /usr/share/dirb/wordlists/common.txt -fc 403,404 -fs 185 -u "http://$TAR
 
 ## CDN
 
+CDN: Content Dilivery Network
+
+- online ping
+  - http://ping.chinaz.com/
+  - http://ping.aizhan.com/
+  - http://ce.cloud.360.cn/
+
 ## WAF
 
 ## Web源码
+
+- 目录结构
+  - 后台目录
+  - 模板目录
+  - 数据库目录
+  - 数据库配置文件
+- 脚本类型
+  - asp
+  - php
+  - jsp
+  - java
+- 应用分类
+  - 门户
+  - 电商
+  - 论坛
+  - 博客
+- 其他补充
+  - 框架or非框架
+  - CMS识别
+  - 开源or闭源
+  - 源码获取
+
+## 子域名
 
 ## 站点搭建
 
