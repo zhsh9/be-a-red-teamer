@@ -588,6 +588,9 @@ WAF: Web Application Firewall
   - [x] NTUSTISC - Penetration Test: [0x01](https://www.youtube.com/watch?v=D8Usq_BCW2Y), [0x02](https://www.youtube.com/watch?v=9p57TntyqFU)
   - [ ] [Beginner to Advanced Bug Bounty Hunting Course](https://www.youtube.com/watch?v=Rp69edBmFFo)
 - Bilibili
+  - Vulnerable Environments Practice
+    - [ ] [OSCP 推荐靶场](https://space.bilibili.com/102541140/channel/collectiondetail?sid=1397293&ctype=0)
+    - [ ] [渗透测试OSCP备考必刷！HACK THE BOX靶机渗透测试](https://space.bilibili.com/353221990/channel/collectiondetail?sid=297479&ctype=0)
   - Linux Privilege Escalation
     - [ ] [Linux提权精讲：原理和枚举](https://www.bilibili.com/video/BV1Wh4y1H7LK)
     - [ ] [Linux提权精讲：演示1 - 服务漏洞利用提权](https://www.bilibili.com/video/BV19s4y1D7Mt)
