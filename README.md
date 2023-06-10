@@ -341,8 +341,36 @@ CDN: Content Dilivery Network
   - http://ping.chinaz.com/
   - http://ping.aizhan.com/
   - http://ce.cloud.360.cn/
+  - https://ip.tool.chinaz.com/
+  - https://get-site-ip.com/
+  - https://tools.ipip.net/cdn.php/
+- no effect
+  - sqli
+  - xss
+- bypass (maybe combined with se)
+  - 子域名查询：主站有CDN但是子站没有
+  - 邮件服务查询：邮件大部分是内部人员访问，量少无CDN
+  - 国外ping出IP地址：企业一般未在国外部署CDN
+  - 遗留文件、扫描全网：例如PHPInfo信息中会遗留出IP地址
+  - 特殊搜索引擎：fofa, shodan, zoomeye, censys, [谛听](https://www.ditecting.com/index.php/home/Index/index)
+  - 工具：fackcdn, w8fuckcdn, zmap
+- Usage
+  - 获取真实IP之后，更改本地Hosts文件绑定解析内容
 
 ## WAF
+
+WAF: Web Application Firewall
+
+- objective
+  - 没有识别WAF直接扫描可能导致IP黑名单
+  - 识别完具体的WAF可以有针对性的bypass
+- recognize WAF
+  - [waf00f](https://github.com/EnableSecurity/wafw00f)
+  - [identYwaf](https://github.com/stamparm/identywaf)
+  - nmap
+    - nmap --script=http-waf-fingerprint
+    - nmap --script=http-waf-detec
+  - 有些Web站点会在GET Header中遗留WAF相关信息
 
 ## Web源码
 
@@ -371,7 +399,25 @@ CDN: Content Dilivery Network
 
 ## 站点搭建
 
+1. 目录型站点（例如，www.xxx.com/bbs）
+   - 主站的漏洞
+   - 子站的漏洞
+2. 端口类站点，shodan扫描
+3. 子域名站点（子域名和域名可能不在一个服务器上）
+4. 类似域名站点（原有域名弃用，但是还能访问；二级or顶级域名更换，旧域名找到突破口）
+   - 社工方式找到相关域名信息
+5. 旁注，C段站点（在线工具：https://www.webscan.cc/）
+   1. 旁注：同一个服务器上面存在多个站点、但是你要攻击的是A网站由于各种原因不能完成安全测试。就通过测试B网站进入服务器然后在攻击A网站最终实现目的。
+   2. C段：不同的服务器上面存在不同的网站，通过扫描发现与你渗透测试的是同一个网段最终拿下服务器、然后通过内网渗透的方式拿下渗透服务器。
+6. 搭建软件特征站点
+   - 有的网站是借助于第三方的集成搭建工具实现例如：PHPstudy、宝塔等环境这样的集成环境搭建的危害就是泄露了详细的版本信息。
+   - phpstudy搭建了之后在默认的站点安装了phpmyadmin有的网站没有做安全性直接可以通过用户名：root密码：root 登录进入
+
 ## 资产收集
+
+- GitHub
+- 搜集：子域名、DNS、备案、证书、全球节点请求CDN
+- 搜索引擎：fofa, shodan, zoomeye
 
 # 2. 漏洞挖掘 Vulnerabilities
 
@@ -543,6 +589,6 @@ CDN: Content Dilivery Network
   - [ ] [Beginner to Advanced Bug Bounty Hunting Course](https://www.youtube.com/watch?v=Rp69edBmFFo)
 - Article
   - [ ] [小迪安全](https://www.yuque.com/weiker/xiaodi)
-- Worlshop
+- Workshop
   - [ ] [pwn.college](https://pwn.college/)
   - [ ] [MADWeb, Workshop on Measurements, Attacks, and Defenses for the Web](https://madweb.work/)
