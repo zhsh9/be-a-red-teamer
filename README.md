@@ -18,9 +18,18 @@
   - [0.8 效率工具](#08-效率工具)
   - [0.9 渗透工具](#09-渗透工具)
 - [1. 信息收集 Reconnaissance](#1-信息收集-reconnaissance)
-  - [1.0 Social Engineer](#10-social-engineer)
-  - [1.1 Scan](#11-scan)
-  - [1.2 Directory](#12-directory)
+  - [Social Engineer](#social-engineer)
+  - [Scan Methods](#scan-methods)
+  - [Host and Port](#host-and-port)
+  - [IPv6 Scan](#ipv6-scan)
+  - [OS](#os)
+  - [Database](#database)
+  - [Directory](#directory)
+  - [CDN](#cdn)
+  - [WAF](#waf)
+  - [Web源码](#web源码)
+  - [站点搭建](#站点搭建)
+  - [资产收集](#资产收集)
 - [2. 漏洞挖掘 Vulnerabilities](#2-漏洞挖掘-vulnerabilities)
   - [Command Injection](#command-injection)
   - [SQLi](#sqli)
@@ -193,19 +202,112 @@ Integrated Pentest Environment:
 
 # 1. 信息收集 Reconnaissance
 
-## 1.0 Social Engineer
+## Social Engineer
 
 Generate word list:
 
 - [cewl](https://github.com/digininja/CeWL)
 
-## 1.1 Scan
+## Scan Methods
 
 - [nmap](https://github.com/nmap/nmap)
+```bash
+# 扫描端口，然后探测版本（用默认的脚本）
+nmap -n -v -Pn -sS -p- $IP --max-retries=0
+nmap -n -v -sC -sV -p$PORTS $IP
+# 
+nmap -sn $IP/24                   # 寻找IP
+nmap -sT --min-rate 10000 -p- $IP
+nmap -sU --min-rate 10000 -p- $IP # TCP|UDP扫描全端口
+nmap -sT -sV -sC -O -p$PORTS $IP  # TCP使用默认脚本扫描全端口+版本+OS信息
+nmap --script-vuln -p$PORTS $IP   # 漏洞脚本扫描
+# 一句话全模式扫描开放端口
+nmap -A $IP -oA nmap/all -p`nmap -sS -sU -Pn -p- $IP --min-rate 10000 | grep '/tcp\|/udp' | awk -F '/' '{print $1}' | sort -u | tr '\n' ','`
+```
 - [AutoRecon](https://github.com/Tib3rius/AutoRecon)
 - [RustScan](https://github.com/RustScan/RustScan)
 
-## 1.2 Directory
+## Host and Port
+
+- nmap
+```bash
+nmap -sn $IP/24
+nmap -sU --min-rate 10000 -p- $IP
+nmap -sT -sC -sV -O --min-rate 10000 -p- $IP
+nmap --script=vuln -p$PORTS $IP
+```
+- ping 主机发现
+```bash
+ping -c 3 -W 1 $IP
+for i in {1..254}; do ping -c 1 -W 1 $sub_IP.$i | grep from; done
+```
+- nc 端口扫描
+```bash
+nc.traditional -vv -z $IP 1-65535 2>&1 | grep -v refused
+```
+- /dev/tcp/xxx/nnn 端口扫描
+```bash
+IP=xxx.xxx.xxx.xxx
+for i in {1..65535}
+do
+    (echo < /dev/tcp/$IP/$i) &>/dev/null && printf "\n[+] Open port: %d\n" "$i" || printf "."
+done
+```
+
+## IPv6 Scan
+
+- nmap
+```bash
+nmap -6 --min-rate 10000 -p- $IPv6
+```
+- [IOXIDResolver](https://github.com/mubix/IOXIDResolver)
+```bash
+python IOXIDResolver.py -t $IP
+```
+- [snmpwalk](http://www.net-snmp.org/docs/man/snmpwalk.html)
+```bash
+snmpwalk -v2c -c public $IP
+```
+
+## OS
+
+- 有web端：
+  - Windows大小写不敏感
+  - 工具识别
+- 没有web：
+  - nmap -O
+- TTL（不准确的方式）：
+```
+1、WINDOWS NT/2000   TTL：128
+2、WINDOWS 95/98     TTL：32
+3、UNIX              TTL：255
+4、LINUX             TTL：64
+5、WIN7         	    TTL：64
+```
+- 特殊端口：22, 139, 445, 1433, 3389
+
+## Database
+
+数据库不同表示的结构也是不同、写法结构也不同，因此产生的漏洞也不一样。不同的数据库的攻击方式也不完全一样。
+
+- default pair
+  1. asp + access/mssql
+  2. php + mysql
+  3. aspx + mssql
+  4. jsp + mysql/oracle
+  5. python + mongodb
+- common port
+  - SQL
+    - mysql, 3306
+    - sqlserver, 1433
+    - oracle, 1521
+    - postgresql, 5432
+  - NoSQL
+    - mongodb, 27017
+    - redis, 6379
+    - memcached, 11211
+
+## Directory
 
 wordlist:
 
@@ -229,6 +331,16 @@ dirb "http://$TARGET" /usr/share/seclists/Discovery/Web-Content/common.txt
 ffuf -fs 185 -c -w \$(fzf-wordlists) -H 'Host: FUZZ.org' -u "http://$TARGET/"
 ffuf -w /usr/share/dirb/wordlists/common.txt -fc 403,404 -fs 185 -u "http://$TARGET/FUZZ" -p 1
 ```
+
+## CDN
+
+## WAF
+
+## Web源码
+
+## 站点搭建
+
+## 资产收集
 
 # 2. 漏洞挖掘 Vulnerabilities
 
