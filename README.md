@@ -535,7 +535,7 @@ WAF: Web Application Firewall
 - [https://github.com/sleventyeleven/linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker)
 - [https://github.com/pentestmonkey/unix-privesc-check](https://github.com/pentestmonkey/unix-privesc-check)
 
-工具使用, <u>[*👉🏻GO*](./3.PrivilegeEscalation/UsageOfTools.md)</u>
+工具使用, <u>[*👉🏻GO*](./3.Privilege-Escalation/Linux/UsageOfTools.md)</u>
 
 # 4. 后渗透期 Post Pentest
 
@@ -587,6 +587,12 @@ WAF: Web Application Firewall
   - [ ] [Adversary Emulation with Caldera \| Red Team Series 1-13](https://www.youtube.com/watch?v=Vdd4lRXB7zE&list=PLTnRtjQN5iea6dLA_4i3qFFX0kwvdL0bL)
   - [x] NTUSTISC - Penetration Test: [0x01](https://www.youtube.com/watch?v=D8Usq_BCW2Y), [0x02](https://www.youtube.com/watch?v=9p57TntyqFU)
   - [ ] [Beginner to Advanced Bug Bounty Hunting Course](https://www.youtube.com/watch?v=Rp69edBmFFo)
+- Bilibili
+  - Linux Privilege Escalation
+    - [ ] [Linux提权精讲：原理和枚举](https://www.bilibili.com/video/BV1Wh4y1H7LK)
+    - [ ] [Linux提权精讲：演示1 - 服务漏洞利用提权](https://www.bilibili.com/video/BV19s4y1D7Mt)
+    - [ ] [Linux提权精讲：演示2 - 20种Linux渗透测试提权演示精讲](https://www.bilibili.com/video/BV1Es4y1M7ZL)
+    - [ ] [Linux提权精讲：Sudo风暴全70讲](https://www.bilibili.com/video/BV1DV4y1U7bT)
 - Article
   - [ ] [小迪安全](https://www.yuque.com/weiker/xiaodi)
 - Workshop
