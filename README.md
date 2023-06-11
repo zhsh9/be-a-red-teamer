@@ -347,9 +347,24 @@ ffuf -w /usr/share/dirb/wordlists/common.txt -fc 403,404 -fs 185 -u "http://$TAR
 
 ## DNS
 
+- dig
+- nslookup
+- whois
 ```bash
 dig axfr mydomain.local @IP_ADRESS
+nslookup -type=any $DOMAIN_NAME
+whois $DOMAIN_NAME
 ```
+
+- [theHaverster - OSINT](https://github.com/laramies/theHarvester.git)
+  - email
+  - subdomain
+  - name
+```bash
+theHarvester -d $DOMAIN_NAME -b google
+```
+
+- [Certificate Search](https://crt.sh/)
 
 ## CDN
 
