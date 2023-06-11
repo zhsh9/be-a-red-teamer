@@ -28,7 +28,7 @@
   - [CDN](#cdn)
   - [WAF](#waf)
   - [Web源码](#web源码)
-  - [子域名](#子域名)
+  - [Subdomain](#subdomain)
   - [站点搭建](#站点搭建)
   - [资产收集](#资产收集)
 - [2. 漏洞挖掘 Vulnerabilities](#2-漏洞挖掘-vulnerabilities)
@@ -200,8 +200,19 @@ Integrated Pentest Environment:
 ## 0.9 渗透工具
 
 - Burp Suite Pro, <u>[*👉🏻Go*](./0.Background/Tool/BurpSuitePro.md)</u>
+- [arsenal](https://github.com/Orange-Cyberdefense/arsenal)
+- [Bug-bounty checklist](https://github.com/sehno/Bug-bounty)
 
 # 1. 信息收集 Reconnaissance
+
+```
+      subdomain  top-domain-level    signifies query
+        ───        ───                   ──
+https://sub.domain.com/blog/article/search?param=1
+──────      ──────     ─────────────────── ───────
+scheme      domain      path or location   parameter(s)
+                             of contents
+```
 
 ## Social Engineer
 
@@ -395,7 +406,15 @@ WAF: Web Application Firewall
   - 开源or闭源
   - 源码获取
 
-## 子域名
+## Subdomain
+
+- gobuster
+```bash
+# fzf-wordlists
+/usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt
+# gobuster
+gobuster vhost -u <http://example.com> -w /path/to/wordlist.txt --append-domain -t $THREAD_NUM
+```
 
 ## 站点搭建
 
@@ -598,6 +617,7 @@ WAF: Web Application Firewall
     - [ ] [Linux提权精讲：Sudo风暴全70讲](https://www.bilibili.com/video/BV1DV4y1U7bT)
 - Article
   - [ ] [小迪安全](https://www.yuque.com/weiker/xiaodi)
+  - [ ] [HackTricks](https://book.hacktricks.xyz/welcome/readme)
 - Workshop
   - [ ] [pwn.college](https://pwn.college/)
   - [ ] [MADWeb, Workshop on Measurements, Attacks, and Defenses for the Web](https://madweb.work/)
