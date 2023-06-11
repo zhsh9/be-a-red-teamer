@@ -1,0 +1,16 @@
+- [ ] Social Engineer
+  - [ ] Personnel
+  - [ ] Asset
+- [ ] DNS
+- [ ] Domains and subdomains
+- [ ] Hosts and ports
+  - [ ] OS
+  - [ ] Service
+    - [ ] Web
+      - [ ] Framework
+      - [ ] Directory/file
+      - [ ] Source code
+    - [ ] Database
+  - [ ] CDN
+  - [ ] WAF
+- [ ] IPv6
