@@ -25,6 +25,7 @@
   - [OS](#os)
   - [Database](#database)
   - [Directory](#directory)
+  - [DNS](#dns)
   - [CDN](#cdn)
   - [WAF](#waf)
   - [Web源码](#web源码)
@@ -344,6 +345,12 @@ ffuf -fs 185 -c -w \$(fzf-wordlists) -H 'Host: FUZZ.org' -u "http://$TARGET/"
 ffuf -w /usr/share/dirb/wordlists/common.txt -fc 403,404 -fs 185 -u "http://$TARGET/FUZZ" -p 1
 ```
 
+## DNS
+
+```bash
+dig axfr mydomain.local @IP_ADRESS
+```
+
 ## CDN
 
 CDN: Content Dilivery Network
@@ -618,6 +625,7 @@ gobuster vhost -u <http://example.com> -w /path/to/wordlist.txt --append-domain 
 - Article
   - [ ] [小迪安全](https://www.yuque.com/weiker/xiaodi)
   - [ ] [HackTricks](https://book.hacktricks.xyz/welcome/readme)
+  - [ ] [How DNS works](https://howdns.works/)
 - Workshop
   - [ ] [pwn.college](https://pwn.college/)
   - [ ] [MADWeb, Workshop on Measurements, Attacks, and Defenses for the Web](https://madweb.work/)
