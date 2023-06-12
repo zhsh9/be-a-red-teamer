@@ -1,4 +1,4 @@
-# 目录
+# Inventory
 
 ![License](https://img.shields.io/github/license/zhsh9/be-a-red-teamer)
 ![Repo Size](https://img.shields.io/github/repo-size/zhsh9/be-a-red-teamer?color=green)
@@ -6,7 +6,7 @@
 ![zhsh9](https://img.shields.io/github/followers/zhsh9?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/zhsh9/be-a-red-teamer?style=social)
 
-- [目录](#目录)
+- [Inventory](#inventory)
 - [0. 前置知识 Background](#0-前置知识-background)
   - [0.1 操作系统使用](#01-操作系统使用)
   - [0.2 Shell使用](#02-shell使用)
