@@ -203,6 +203,7 @@ Integrated Pentest Environment:
 - Burp Suite Pro, <u>[*👉🏻Go*](./0.Background/Tool/BurpSuitePro.md)</u>
 - [arsenal](https://github.com/Orange-Cyberdefense/arsenal)
 - [Bug-bounty checklist](https://github.com/sehno/Bug-bounty)
+- [goby](https://github.com/gobysec/Goby)
 
 # 1. 信息收集 Reconnaissance
 
