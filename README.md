@@ -204,6 +204,7 @@ Integrated Pentest Environment:
 - [arsenal](https://github.com/Orange-Cyberdefense/arsenal)
 - [Bug-bounty checklist](https://github.com/sehno/Bug-bounty)
 - [goby](https://github.com/gobysec/Goby)
+- [LadonGo](https://github.com/k8gege/LadonGo)
 
 # 1. 信息收集 Reconnaissance
 
@@ -642,6 +643,8 @@ gobuster vhost -u <http://example.com> -w /path/to/wordlist.txt --append-domain 
   - [ ] [小迪安全](https://www.yuque.com/weiker/xiaodi)
   - [ ] [HackTricks](https://book.hacktricks.xyz/welcome/readme)
   - [ ] [How DNS works](https://howdns.works/)
+- Course
+  - [ ] [2021 交大程式安全 binary exploit 課程](https://github.com/u1f383/Software-Security-2021-2022)
 - Workshop
   - [ ] [pwn.college](https://pwn.college/)
   - [ ] [MADWeb, Workshop on Measurements, Attacks, and Defenses for the Web](https://madweb.work/)
