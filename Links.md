@@ -15,7 +15,7 @@ Collect useful links among the field of security.
 - **Research**
   - Online tools
     - [overleaf](https://www.overleaf.com)
-    - [latex math](https://latex.codecogs.com/eqneditor/editor.php)
+    - [math editor](https://latex.codecogs.com/eqneditor/editor.php)
   - Magzines and conferences
     -  [Google Scholar](https://scholar.google.com)
     - [IEEE Symposium on Security and Privacy](https://ieeexplore.ieee.org/xpl/conhome/1000646/all-proceedings)
