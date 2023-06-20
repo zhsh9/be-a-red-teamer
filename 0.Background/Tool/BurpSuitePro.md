@@ -46,3 +46,22 @@ Config HTTPS (import cert, which downloaded from `burp/`, on Chrome)
 - Download cert from `burp/` and install it into macOS
 
 ![import cert](./.img-BurpSuitePro/2.png)
+
+# Windows
+
+1. Burp Suite Pro install
+2. BurpLoaderKeygen download
+3. Java install
+4. Run BurpLoaderKeygen in C:\Users\zhsh\AppData\Local\Programs\BurpSuitePro
+5. Register and change vmoptions file as below
+
+```
+--add-opens=java.desktop/javax.swing=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.Opcodes=ALL-UNNAMED
+-javaagent:C:/Users/zhsh/AppData/Local/Programs/BurpSuitePro/BurpLoaderKeygen.jar
+-Xmx1024m
+-noverify
+```
