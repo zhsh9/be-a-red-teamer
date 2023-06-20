@@ -65,3 +65,9 @@ Config HTTPS (import cert, which downloaded from `burp/`, on Chrome)
 -Xmx1024m
 -noverify
 ```
+
+6. Cert install on trusted mode.
+
+![](./.img-BurpSuitePro/3.png)
+
+![](./.img-BurpSuitePro/4.png)
