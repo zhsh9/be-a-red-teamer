@@ -10,8 +10,9 @@ Collect useful links among the field of security.
   - Binary Exploit
     - [GTFOBins](https://gtfobins.github.io/)
     - [reverse-shell-generator](https://www.revshells.com/)
-  - MD5
+  - Cryptography
     - [SOMD5](https://www.somd5.com/)
+    - [dcode](https://www.dcode.fr/en)
 - **Research**
   - Online tools
     - [overleaf](https://www.overleaf.com)

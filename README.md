@@ -599,7 +599,7 @@ gobuster vhost -u <http://example.com> -w /path/to/wordlist.txt --append-domain 
 # Appendix. 靶场
 
 - [OSCP](https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=0)
-- VulnHub
+- [VulnHub](https://www.vulnhub.com/)
 - HackTheBox
 - TryHackMe
 - DVWA
