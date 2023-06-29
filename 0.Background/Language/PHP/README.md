@@ -155,4 +155,85 @@ selector {property: value}
     - white-space: nowrap
     - overflow
       - hidden
+    - text-align
+      - left
+      - right
+      - center
+    - text-decoration
+      - none
+      - underline
+      - line-through
+    - text-shadow
+    - letter-spacing
+    - line-height
+    - color
+  - 边框
+    - border
+    - border-color
+    - border-style
+    - border-width
+    - border-left-color
+    - border-left-style
+    - border-left-width
+    - CSS3
+      - border-radius
+      - box-shadow
+  - 背景属性，background
+    - background-color
+    - background-image
+    - background-repeat
+    - background-position
+    - CSS3
+      - background-size
+      - background: url no-repeat scroll 10px 20px
+      - background-origin: content-box, content-box
+      - background-clip: padding-box, padding-box
+      - background-size: 50px 60px, 50px 60px
+  - 内补丁，padding
+    - padding
+    - padding-top, -bottom, -left, -right
+  - 外补丁，margin
+    - margin
+    - margin-top, -bottom, -left, -right
+  - 定位，position
+    - position
+      - absolute
+      - fixed
+    - z-index
+    - top, bottom, left, right
 - div+css布局
+
+```
+┌───────────────────────────────────────────────────────────────────────────┐
+│                                                                           │
+│                               margin-top                                  │
+│                                                                           │
+│      ┌────────────────────────────────────────────────────────────┐       │
+│      │                        border-top                          │       │
+│      │   ┌────────────────────────────────────────────────────┐   │       │
+│      │   │                    padding-top                     │   │       │
+│      │   │  ┌──▲───────────────────────────────────────────┐  │   │       │
+│      │   │  │  │                                           │  │   │       │
+│      │   │  │  │               Content                     │  │   │       │
+│margin│   │  │  │                                           │  │   │margin │
+│-left │   │  │  │                                           │  │   │-right │
+│      │   │  │ height                                       │  │   │       │
+│      │   │  │  │                                           │  │   │       │
+│      │   │  │  │                width                      │  │   │       │
+│      │   │  ◄──┴───────────────────────────────────────────►  │   │       │
+│      │   │  └──▼───────────────────────────────────────────┘  │   │       │
+│      │   │                   padding-bottom                   │   │       │
+│      │   └────────────────────────────────────────────────────┘   │       │
+│      │                       border-bottom                        │       │
+│      └────────────────────────────────────────────────────────────┘       │
+│                                                                           │
+│                              margin-bottom                                │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+```
+
+盒子模型
+
+两种盒子（块和行内），特点是由CSS中的display属性决定的，
+- Display:block  // 块盒子，自动占一行
+- Display:inline // 行内盒子，一行摆放多个
