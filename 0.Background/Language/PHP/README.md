@@ -1,3 +1,12 @@
+# Inventory
+
+- [Inventory](#inventory)
+- [Crash Course](#crash-course)
+- [开发环境搭建](#开发环境搭建)
+- [前置基础知识](#前置基础知识)
+  - [HTML标签](#html标签)
+  - [CSS基本写法](#css基本写法)
+
 # Crash Course
 
 - [ ] [PHP8快速入门在线教程](https://www.bilibili.com/video/BV1Xh411S7G1)
@@ -86,3 +95,64 @@
       - name 为属性表单起个名字，HTML5不支持用id替代
     - input
       - type
+        - text
+        - password
+        - radio
+        - checkbox
+        - file
+        - submit
+        - reset
+        - HTML5
+          - date
+          - time
+          - url
+          - email
+          - number
+      - value
+      - readonly
+    - select
+      - option
+    - textarea
+  - button
+  - fieldset
+  - legend
+  - optgroup
+  - datalist
+  - iframe
+
+## CSS基本写法
+
+selector {property: value}
+
+- 选择器
+  - 标签选择器, p
+  - 类选择器, .class
+  - id选择器, #id
+  - 关联选择符
+  - 组合选择符
+  - 伪类选择符
+    - :link，未访问
+    - :visited，已访问
+    - hover，鼠标悬停
+    - active，激活的
+- 属性
+  - 颜色属性，color
+  - 字体属性，font
+    - font-size
+    - font-family
+    - font-style
+      - normal
+      - italic
+      - oblique
+    - font-weight
+      - bold
+      - light
+  - 文本属性
+    - text-indent
+    - text-overflow
+      - clip
+      - ellipsis
+    - white-space: nowrap
+    - overflow
+      - hidden
+- div+css布局
