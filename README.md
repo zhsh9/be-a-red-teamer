@@ -113,7 +113,7 @@ Red Team Kill Chain:
 
 OS:
 - Linux
-    - Black Arch Linux
+    - Black Arch Linux, <u>[*👉🏻GO*](./0.Background/OS/Black-Arch/README.md)</u>
     - Kali Linux, <u>[*👉🏻GO*](./0.Background/OS/Kali-Linux/README.md)</u>
     - Parrot OS
 - Windows
