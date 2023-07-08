@@ -41,8 +41,36 @@ type(var)
 - 字典, dict
 - 集合, set
 
+## 常用内置函数
+
+- input()
+- print()
+- sort()
+
 ## 运算符
 
+- 算术
+  - +, -, *, /, %, **, //
+- 比较
+  - ==, !=, >, <, >=, <=
+- 逻辑
+  - and, or, not
+- 赋值
+  - =, +=, -=, *=, /=, %=, **=, //=
+- 成员
+  - in, not in
+- 身份
+- 位
 
+## 流程控制
+
+- if (elif) esle
+- for range
+  - enumerate(sequence)
+  - dict.keys()
+  - dict.values()
+  - dict.items()
+- while
+- break & continue
 
 # Advanced
