@@ -21,10 +21,11 @@
   - [Social Engineer](#social-engineer)
   - [Banner Grabbing](#banner-grabbing)
   - [Host and Port](#host-and-port)
+  - [web scanner](#web-scanner)
+  - [web path](#web-path)
   - [IPv6 Scan](#ipv6-scan)
   - [OS](#os)
   - [Database](#database)
-  - [Directory](#directory)
   - [DNS](#dns)
   - [CDN](#cdn)
   - [WAF](#waf)
@@ -269,6 +270,38 @@ do
 done
 ```
 
+## web scanner
+
+- [whatweb](https://github.com/urbanadventurer/WhatWeb)
+```bash
+whatweb [opts] <urls>
+```
+
+## web path
+
+- [dirb](https://www.kali.org/tools/dirb/)
+```bash
+dirb $IP $Wordlist
+```
+- [dirsearch](https://github.com/maurosoria/dirsearch)
+	- -t \<thead\>
+	- -r, brute-force recursively
+	- -i \<code\>, include status codes
+	- -x \<codes\>, exclude status codes
+	- -m \<method\>
+	- -d \<data\>
+	- -H \<headers\>
+	- --user-agent=\<ua\>
+	- --cookie=\<ck\>
+```bash
+dirsearch -u <target> -e <extensions> [options]
+```
+- [ffuf](https://www.kali.org/tools/ffuf/)
+```bash
+ffuf -fs 185 -c -w \$(fzf-wordlists) -H 'Host: FUZZ.org' -u "http://$TARGET/"
+ffuf -w /usr/share/dirb/wordlists/common.txt -fc 403,404 -fs 185 -u "http://$TARGET/FUZZ" -p 1
+```
+
 ## IPv6 Scan
 
 - nmap
@@ -321,31 +354,6 @@ snmpwalk -v2c -c public $IP
     - mongodb, 27017
     - redis, 6379
     - memcached, 11211
-
-## Directory
-
-wordlist:
-
-- [SecLists](https://github.com/danielmiessler/SecLists)
-- common used:
-  - /path/to/wordlists/dirb/common.txt
-  - /path/to/seclists/Discovery/Web-Content/common.txt
-- fzf-wordlists
-```bash
-find /usr/share/seclists /usr/share/wordlists /usr/share/wfuzz /usr/share/dirb -type f | fzf
-```
-
-operation:
-
-- [dirb](https://www.kali.org/tools/dirb/)
-```bash
-dirb "http://$TARGET" /usr/share/seclists/Discovery/Web-Content/common.txt
-```
-- [ffuf](https://github.com/ffuf/ffuf)
-```bash
-ffuf -fs 185 -c -w \$(fzf-wordlists) -H 'Host: FUZZ.org' -u "http://$TARGET/"
-ffuf -w /usr/share/dirb/wordlists/common.txt -fc 403,404 -fs 185 -u "http://$TARGET/FUZZ" -p 1
-```
 
 ## DNS
 
