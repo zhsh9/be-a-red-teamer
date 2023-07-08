@@ -19,7 +19,7 @@
   - [0.9 渗透工具](#09-渗透工具)
 - [1. 信息收集 Reconnaissance](#1-信息收集-reconnaissance)
   - [Social Engineer](#social-engineer)
-  - [Scan Methods](#scan-methods)
+  - [Banner Grabbing](#banner-grabbing)
   - [Host and Port](#host-and-port)
   - [IPv6 Scan](#ipv6-scan)
   - [OS](#os)
@@ -223,7 +223,7 @@ Generate word list:
 
 - [cewl](https://github.com/digininja/CeWL)
 
-## Scan Methods
+## Banner Grabbing
 
 - [nmap](https://github.com/nmap/nmap)
 ```bash
@@ -640,7 +640,8 @@ gobuster vhost -u <http://example.com> -w /path/to/wordlist.txt --append-domain 
     - [ ] [Linux提权精讲：演示2 - 20种Linux渗透测试提权演示精讲](https://www.bilibili.com/video/BV1Es4y1M7ZL)
     - [ ] [Linux提权精讲：Sudo风暴全70讲](https://www.bilibili.com/video/BV1DV4y1U7bT)
 - Article
-  - [ ] [小迪安全](https://www.yuque.com/weiker/xiaodi)
+  - [ ] [小迪安全笔记1](https://www.yuque.com/weiker/xiaodi)
+  - [ ] [小迪安全笔记2](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg5MDY2MTUyMA==&action=getalbum&album_id=2058889256642707457#wechat_redirect)
   - [ ] [HackTricks](https://book.hacktricks.xyz/welcome/readme)
   - [ ] [How DNS works](https://howdns.works/)
 - Course
