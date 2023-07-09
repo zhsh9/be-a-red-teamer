@@ -148,19 +148,58 @@ Python文件开头申明编码
 
 文件操作流程：
 1. 打开
+   - open(file, mode, buffering, encoding, ...) -> _io.TextIOWrapper
 2. 操作(增删改查)
-   - open(file, mode, buffering, encoding, ...)
    - write(text)
    - read(size)
    - seek(offset, whence), whence:
      - 0 -- start of stream (the default); offset should be zero or positive
      - 1 -- current stream position; offset may be negative
      - 2 -- end of stream; offset is usually negative
-   - close()
 3. 关闭
+   - close()
 
 ### 打开模式
+
+文本模式：
 
 - r 只读
 - w 创建
 - a 追加
+
+二进制模式（读取和写入的都是bytes类型）：
+
+- rb
+- wb
+- ab
+
+混合模式：
+
+- r+
+- a+
+
+### 相关属性和方法
+
+属性
+
+- f.mode
+- f.name
+- f.encoding
+
+方法
+
+- f.fileno()
+  - returns underlying file descriptor if one exists
+- f.flush()
+  - flush write buffers, if applicable
+- f.readable()
+- f.seekable()
+- f.writable()
+- f.readline()
+- f.seek(offset, whence=0)
+- f.tell
+- f.truncate
+  - truncate file to size bytes
+  - file pointer is left unchanged
+  - size defaults to the current IO position as reported by tell()
+  - returns the new size.
